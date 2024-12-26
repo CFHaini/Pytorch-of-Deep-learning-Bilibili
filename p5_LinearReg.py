@@ -5,13 +5,13 @@ import torch
 # @Owner : 考研数学计算机之路 2024-2025 项目班
 
 # 代码重点解读：
-    line :27、43、63 中的 (x) 隐藏着Pytorch的关键知识：
+    代码行 line:36、line:58、line:78 中的 (x) 隐藏着Pytorch的关键知识：
     torch.nn.Module 类的 __call__ 方法被重载了。具体来说，当你调用模型实例（例如 model(x_data)）时，
     实际上是调用了 torch.nn.Module 中的 __call__ 方法，而这个方法会自动处理一些额外的功能，比如：
     1. 前向传播：__call__ 方法实际会调用 model.forward 方法，这就是为什么你可以直接用 model(x) 来进行预测。
     2. 注册钩子：__call__ 方法还会处理一些与模型相关的钩子（hooks），这些钩子可以在前向传播或反向传播时执行自定义操作。
     3. 输入验证：它会验证输入的形状和类型，以确保它们符合模型的要求。
-    因此，model(x_data) 实际上是调用了 __call__ 方法，进而调用了 forward 方法，返回预测值 y_pred。
+    因此，model(x_data) 实际上是调用了 __call__ 方法，进而调用了 因此，model.forward 方法，返回预测值 y_pred。
     
     详情见：https://blog.csdn.net/xxboy61/article/details/88101192
 '''
@@ -49,10 +49,10 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 # 进行1000次训练迭代
 for epoch in range(1000):
     '''每一次epoch的训练过程，总结就是
-        前向传播，求y hat （输入的预测值）
-        根据y_hat和y_label(y_data)计算loss
-        反向传播 backward (计算梯度)
-        根据梯度，更新参数
+        1、前向传播，求y hat （输入的预测值）
+        2、根据y_hat和y_label(y_data)计算loss
+        3、反向传播 backward (计算梯度)
+        4、根据梯度，更新参数
     '''
     # 通过模型计算预测值
     y_pred = model(x_data)

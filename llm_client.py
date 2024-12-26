@@ -2,8 +2,8 @@ import openai
 import sys
 
 api_key = "EMPTY"
-openai.api_base = "http://localhost:6006/v1"
-
+openai.api_base = "http://0.0.0.0:6006/v1"
+# 会报错让用 openai==20.8版本，但是换了库版本后也连不上
 
 def chat_with_gpt3_5(messages):
     response = openai.ChatCompletion.create(
