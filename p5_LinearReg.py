@@ -11,7 +11,7 @@ import torch
     1. 前向传播：__call__ 方法实际会调用 model.forward 方法，这就是为什么你可以直接用 model(x) 来进行预测。
     2. 注册钩子：__call__ 方法还会处理一些与模型相关的钩子（hooks），这些钩子可以在前向传播或反向传播时执行自定义操作。
     3. 输入验证：它会验证输入的形状和类型，以确保它们符合模型的要求。
-    因此，model(x_data) 实际上是调用了 __call__ 方法，进而调用了 因此，model.forward 方法，返回预测值 y_pred。
+    因此，model(x_data) 实际上是调用了 __call__ 方法，进而调用了 model.forward 方法，返回预测值 y_pred。
     
     详情见：https://blog.csdn.net/xxboy61/article/details/88101192
 '''

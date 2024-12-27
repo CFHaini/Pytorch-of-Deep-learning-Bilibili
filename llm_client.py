@@ -1,13 +1,13 @@
 import openai
 import sys
 
-api_key = "EMPTY"
-openai.api_base = "http://0.0.0.0:6006/v1"
-# 会报错让用 openai==20.8版本，但是换了库版本后也连不上
+api_key = "kysxjsjzl"
+openai.api_base = "http://127.0.0.1:6006/v1"
+#  openai==20.8
 
 def chat_with_gpt3_5(messages):
     response = openai.ChatCompletion.create(
-        model="xxx",
+        model="考研数学计算机之路",
         messages=messages,
         api_key=api_key,
         stream=True  # 启用流式输出
