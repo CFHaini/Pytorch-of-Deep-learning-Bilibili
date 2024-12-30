@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 '''
 # @Collector and Speaker : little snow
-# @Owner : 考研数学计算机之路 2024-2025 项目班
+# @Owner : 考研数学计算机之路 2024-2025 LLM微调实战项目
 
 # 相关前备知识：
     torch.from_numpy()和numpy()函数，用于在PyTorch张量和NumPy数组间转换：

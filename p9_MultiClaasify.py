@@ -6,7 +6,7 @@ import torch.nn.functional as F
 
 '''
 # @Collector and Speaker : little snow
-# @Owner : 考研数学计算机之路 2024-2025 项目班
+# @Owner : 考研数学计算机之路 2024-2025 LLM微调实战项目
 
 # 前备知识：
     torch.max使用： https://zhuanlan.zhihu.com/p/583117614

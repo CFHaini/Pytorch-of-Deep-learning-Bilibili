@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 '''
 # @Collector and Speaker : little snow
-# @Owner : 考研数学计算机之路 2024-2025 项目班
+# @Owner : 考研数学计算机之路 2024-2025 LLM微调实战项目
 
 # 前备知识：
     with torch.no_grad()使用： https://zhuanlan.zhihu.com/p/673420509
@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
     训练中每一轮epoch中迭代次数 = len / batch_size
     minibatch体现在 line:101 inputs, labels = data中：
         inputs的shape是[32,8],labels 的shape是[32,1]
-    '''
+'''
 
 # 读取原始数据，并划分训练集和测试集
 # 使用numpy的loadtxt函数从'diabetes.csv'文件中加载数据，数据以逗号为分隔符，数据类型为32位浮点数
