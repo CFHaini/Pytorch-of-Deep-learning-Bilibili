@@ -129,7 +129,7 @@ class RNNClassifier(torch.nn.Module):
 
 
 # convert name to tensor
-# 必须sort the batch element by length of sequence(降序)
+# 必须把每个batch（批次）数据降序排列
 # name -> characters -> ASCII值 -> padding -> （transpose） ->sort
 
 

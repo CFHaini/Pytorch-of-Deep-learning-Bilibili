@@ -12,10 +12,10 @@ from sklearn.model_selection import train_test_split
     with torch.no_grad()使用： https://zhuanlan.zhihu.com/p/673420509
     
 # 代码重点解读：
-    不要忘了将数据集 diabetes.csv 跟脚本放在同一级目录，line:21 控制读取数据集
+    不要忘了将数据集 diabetes.csv 跟脚本放在同一级目录，line:24 控制读取数据集
     DataLoader对数据集先打乱(shuffle)，然后划分成mini_batch，增强训练稳定性和模型泛化性
     训练中每一轮epoch中迭代次数 = len / batch_size
-    minibatch体现在 line:98 inputs, labels = data中：
+    minibatch体现在 line:101 inputs, labels = data中：
         inputs的shape是[32,8],labels 的shape是[32,1]
     '''
 
