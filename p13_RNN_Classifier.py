@@ -9,7 +9,9 @@ import time
 import math
 
 '''
-任务：根据名字识别他所在的国家
+任务：现在有一个数据集，数据集里有人名和对应的国家。
+我们需要训练一个模型，输入一个新的名字，模型能预测出是基于哪种语言的（18种不同的语言，18分类）
+
 人名字符长短不一，最长的10个字符，所以处理成10维输入张量，都是英文字母刚好可以映射到ASCII上
 Maclean ->  ['M', 'a', 'c', 'l', 'e', 'a', 'n'] ->  [ 77 97 99 108 101 97 110]  ->  [ 77 97 99 108 101 97 110 0 0 0]
 共有18个国家，设置索引为0-17
@@ -196,4 +198,5 @@ plt.plot(epoch, acc_list)
 plt.xlabel('Epoch')
 plt.ylabel('Accuracy')
 plt.grid()
-plt.show()
+plt.savefig('picture/rnn_classifier_accuracy_plot.png')  # 保存图片到picture文件夹
+plt.show()  # 显示图片
