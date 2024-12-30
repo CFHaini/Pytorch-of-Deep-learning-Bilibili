@@ -8,6 +8,13 @@ import numpy as np
 import time
 import math
 
+'''
+任务：根据名字识别他所在的国家
+人名字符长短不一，最长的10个字符，所以处理成10维输入张量，都是英文字母刚好可以映射到ASCII上
+Maclean ->  ['M', 'a', 'c', 'l', 'e', 'a', 'n'] ->  [ 77 97 99 108 101 97 110]  ->  [ 77 97 99 108 101 97 110 0 0 0]
+共有18个国家，设置索引为0-17
+训练集和测试集的表格文件都是第一列人名，第二列国家
+'''
 
 class NameDataset(Dataset):
     def __init__(self, is_train_set):
@@ -45,7 +52,7 @@ class NameDataset(Dataset):
 HIDDEN_SIZE = 100
 BATCH_SIZE = 256
 N_LAYER = 2
-N_EPOCHS = 100
+N_EPOCHS = 25  # 25个epoch就够了
 N_CHARS = 128   # 这个是为了构造嵌入层
 
 trainSet = NameDataset(is_train_set=True)
