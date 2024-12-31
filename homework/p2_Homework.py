@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 
+'''
+有w，b两个参数，穷举最小值
+'''
+
+
 x_data = [1.0, 2.0, 3.0]
 y_data = [2.0, 4.0, 6.0]
 
@@ -29,7 +34,7 @@ for x, y in zip(x_data, y_data):
     mse += loss(_y, y)
 mse /= len(x_data)
 
-h = plt.contourf(w, b, mse)
+# h = plt.contourf(w, b, mse)
 
 fig = plt.figure()
 ax = Axes3D(fig)
