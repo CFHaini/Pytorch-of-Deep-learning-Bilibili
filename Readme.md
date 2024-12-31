@@ -3,22 +3,22 @@
 欢迎来到考研数学计算机之路项目班的深度学习自学项目的仓库！本项目旨在通过实践和实现不同的深度学习模型，帮助大家掌握PyTorch框架的使用。
 
 ## 项目结构
-├── dataset  # 跑代码所需的数据集，已经下载好
-├── homework
-│ ├── p2_Homework.py # 线性回归模型的实现
-│ ├── p4_Homework.py # 简单线性回归模型，使用PyTorch进行训练
-│ ├── p5_Homework.py # 线性回归模型，使用不同优化器进行训练
-│ ├── p6_Homework.py # 逻辑回归模型的实现
-│ ├── p7_Homework.py # 多层感知机模型，使用不同激活函数进行训练
-│ ├── p8_Homework.py # 选做题：Kaggle 泰坦尼克号机器学习竞赛题
-│ ├── p9_Homework.py # 选做题：使用GRU进行 Otto产品分类挑战赛分类
-├── p4_BackPropagation.py # 反向传播算法的实现
-├── p5_LinearReg.py # 线性回归模型的实现
-├── p6_LogisticReg.py # 逻辑回归模型的实现
-├── p7_Multiple_Dimension.py # 多维数据的线性回归模型
-├── p8_Data_loader.py # 数据加载器的实现
-├── p9_MultiClaasify.py # 多分类模型的实现
-└── p13_GRU_Classifier.py # 使用GRU进行分类的实现
+### ├── dataset  # 跑代码所需的数据集，已经下载好
+### ├── homework
+### │   ├── p2_Homework.py  # 线性回归模型的实现
+### │   ├── p4_Homework.py  # 简单线性回归模型，使用PyTorch进行训练
+### │   ├── p5_Homework.py  # 线性回归模型，使用不同优化器进行训练
+### │   ├── p6_Homework.py  # 逻辑回归模型的实现
+### │   ├── p7_Homework.py  # 多层感知机模型，使用不同激活函数进行训练
+### │   ├── p8_Homework.py  # 选做题：Kaggle 泰坦尼克号机器学习竞赛题
+### │   ├── p9_Homework.py  # 选做题：使用GRU进行 Otto产品分类挑战赛分类
+### ├── p4_BackPropagation.py  # 反向传播算法的实现
+### ├── p5_LinearReg.py  # 线性回归模型的实现
+### ├── p6_LogisticReg.py  # 逻辑回归模型的实现
+### ├── p7_Multiple_Dimension.py  # 多维数据的线性回归模型
+### ├── p8_Data_loader.py  # 数据加载器的实现
+### ├── p9_MultiClassify.py  # 多分类模型的实现
+### └── p13_GRU_Classifier.py  # 使用GRU进行分类的实现
 
 
 ## 如何运行
