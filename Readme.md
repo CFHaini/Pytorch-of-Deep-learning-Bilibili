@@ -31,8 +31,9 @@ python homework/p2_Homework.py
 python p5_LinearReg.py
 ```
 ## 关于以下文件：
-```p12_1_Use_Simple_RNN_In_Pytorch.ipynb``` # 简单RNN的实现逐步运行
-```p12_2_RNNTrain_Hello.ipynb```  # RNN实战字符倒序输出的逐步运行
-```p13_GRU_Classifier.ipynb```   # GRU实战语种地区分类的重点解读
+### ```p12_1_Use_Simple_RNN_In_Pytorch.ipynb``` # 简单RNN的实现逐步运行
+### ```p12_2_RNNTrain_Hello.ipynb```  # RNN实战字符倒序输出的逐步运行
+### ```p13_GRU_Classifier.ipynb```   # GRU实战语种地区分类的重点解读
 
-
+## 此仓库基于B站Pytorch 深度学习实践整理得到，可关注```Bilibili刘二大人```进行对应视频的获取,侵删！
+## [点击开始学习](https://www.bilibili.com/video/BV1Y7411d7Ys/?spm_id_from=333.337.search-card.all.click&vd_source=857cbb7cbeb544de1acad66a29b6fbf8)
