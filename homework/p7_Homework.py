@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 读取压缩包中的数据，使用 np.loadtxt，分隔符为逗号
-xy = np.loadtxt('./diabetes.csv.gz', delimiter=',', dtype=np.float32)
+xy = np.loadtxt('../dataset/diabetes.csv.gz', delimiter=',', dtype=np.float32)
 x_data = torch.from_numpy(xy[:, :-1])  # 输入数据
 y_data = torch.from_numpy(xy[:, [-1]])   # 目标输出数据
 

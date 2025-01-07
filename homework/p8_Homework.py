@@ -146,11 +146,11 @@ def test(model, test_loader, optimizers):
 
 # 加载数据
 # 训练数据集，没有传入 scaler，因此会创建一个新的
-train_dataset = TitanicDataset('dataset/titanic/train.csv', scaler=None, is_train=True)
+train_dataset = TitanicDataset('../dataset/titanic/train.csv', scaler=None, is_train=True)
 train_loader = DataLoader(dataset=train_dataset, batch_size=32, shuffle=True, num_workers=0)
 
 # 测试数据集，传入从训练数据集得到的 scaler
-test_dataset = TitanicDataset('dataset/titanic/test.csv', scaler=train_dataset.scaler, is_train=False)
+test_dataset = TitanicDataset('../dataset/titanic/test.csv', scaler=train_dataset.scaler, is_train=False)
 test_loader = DataLoader(dataset=test_dataset, batch_size=32, shuffle=False, num_workers=0)
 
 # 实例化模型，输入特征数量为10: Pclass Name Sex Age SibSp Parch Ticket Fare Cabin Embarked
@@ -174,7 +174,7 @@ losses = train(models, train_loader, criterion, optimizers, num_epochs)
 
 # 测试模型
 # 已知test的结果保存在 gender_submission.csv 文件中，获取准确的 labels 和 predicted 结果算精度
-labels_path = 'dataset/titanic/gender_submission.csv'
+labels_path = '../dataset/titanic/gender_submission.csv'
 data_frame = pd.read_csv(labels_path)
 data_frame.drop(['PassengerId'], axis=1, inplace=True)
 labels = data_frame['Survived'].values

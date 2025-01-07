@@ -140,9 +140,9 @@ if __name__ == '__main__':
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     # 准备数据集
-    train_dataset = OttoDataset(feature_filepath='dataset/p9_homework_Otto/train.csv', mode='train')
+    train_dataset = OttoDataset(feature_filepath='../dataset/p9_homework_Otto/train.csv', mode='train')
     scaler = train_dataset.scaler
-    test_dataset = OttoDataset(feature_filepath='dataset/p9_homework_Otto/test.csv', label_filepath='dataset/p9_homework_Otto/otto_correct_submission.csv', mode='test', scaler=scaler)
+    test_dataset = OttoDataset(feature_filepath='../dataset/p9_homework_Otto/test.csv', label_filepath='../dataset/p9_homework_Otto/otto_correct_submission.csv', mode='test', scaler=scaler)
 
     train_loader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True, num_workers=0)
     test_loader = DataLoader(dataset=test_dataset, batch_size=64, shuffle=False, num_workers=0)
