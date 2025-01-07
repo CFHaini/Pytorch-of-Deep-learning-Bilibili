@@ -12,6 +12,9 @@
 ### │   ├── p7_Homework.py  # 多层感知机模型，使用不同激活函数进行训练
 ### │   ├── p8_Homework.py  # 选做题：Kaggle 泰坦尼克号机器学习竞赛题
 ### │   ├── p9_Homework.py  # 选做题：使用GRU进行 Otto产品分类挑战赛分类
+### ├── p2_BackPropagation.py  # 简单的线性模型的实现
+### ├── p3_1_BackPropagation.py  # 简单梯度下降算法的实现
+### ├── p3_2_BackPropagation.py  # 随机梯度下降算法的实现
 ### ├── p4_BackPropagation.py  # 反向传播算法的实现
 ### ├── p5_LinearReg.py  # 线性回归模型的实现
 ### ├── p6_LogisticReg.py  # 逻辑回归模型的实现
@@ -20,6 +23,7 @@
 ### ├── p9_MultiClassify.py  # 多分类模型的实现
 ### └── p13_GRU_Classifier.py  # 使用GRU进行分类的实现
 
+### P12以及p13部分的文件是后期RNN/LSTM/讲解课的内容，暂时先不用看
 
 ## 如何运行
 
