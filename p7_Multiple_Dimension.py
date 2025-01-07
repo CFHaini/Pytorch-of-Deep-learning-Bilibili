@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 # 准备数据集
 # 从 'diabetes.csv' 文件中加载数据，使用逗号作为分隔符，数据类型为浮点数
-xy = np.loadtxt('diabetes.csv', delimiter=',', dtype=np.float32)
+xy = np.loadtxt('dataset/diabetes.csv', delimiter=',', dtype=np.float32)
 
 # 将数据的前8列作为输入特征 x_data
 # 第一个‘：’表示读取所有行，第二个‘：’表示读取从第一列到倒数第二列的所有列
@@ -65,12 +65,13 @@ criterion = torch.nn.BCELoss(reduction='mean')
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
 
 # 训练循环，进行前向传播、反向传播和参数更新
+# 注意此处设置跑99万9999轮，如果大家只是测试的话，跑100000轮就够了
 for epoch in range(999999):
     # 前向传播，计算预测值
     y_pred = model(x_data)
     # 计算损失
     loss = criterion(y_pred, y_data)
-    print(epoch, loss.item())  # 打印当前迭代次数和损失值
+    # print(epoch, loss.item())  # 打印当前迭代次数和损失值
 
     # 清零梯度
     optimizer.zero_grad()
@@ -79,8 +80,8 @@ for epoch in range(999999):
     # 更新模型参数
     optimizer.step()
 
-    # 每100000次迭代打印一次损失和准确率
-    if epoch % 100000 == 99999:
+    # 每10000次迭代打印一次损失和准确率
+    if epoch % 10000 == 9999:
         # 将预测值转换为标签，阈值为0.5
         y_pred_label = torch.where(y_pred >= 0.5, torch.tensor([1.0]), torch.tensor([0.0]))
 

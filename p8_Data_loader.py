@@ -21,7 +21,7 @@ from sklearn.model_selection import train_test_split
 
 # 读取原始数据，并划分训练集和测试集
 # 使用numpy的loadtxt函数从'diabetes.csv'文件中加载数据，数据以逗号为分隔符，数据类型为32位浮点数
-raw_data = np.loadtxt('diabetes.csv', delimiter=',', dtype=np.float32)
+raw_data = np.loadtxt('dataset/diabetes.csv', delimiter=',', dtype=np.float32)
 
 # 将数据的所有列（除了最后一列）作为特征X
 X = raw_data[:, :-1]
