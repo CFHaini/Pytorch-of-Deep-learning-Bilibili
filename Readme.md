@@ -14,7 +14,7 @@
 ### │   ├── p9_Homework.py  # 选做题：使用GRU进行 Otto产品分类挑战赛分类
 ### ├── p2_BackPropagation.py  # 简单的线性模型的实现
 ### ├── p3_1_BackPropagation.py  # 简单梯度下降算法的实现
-### ├── p3_2_BackPropagation.py  # 随机梯度下降算法的实现
+### ├── p3_2_StochasticDescent.py  # 随机梯度下降算法的实现
 ### ├── p4_BackPropagation.py  # 反向传播算法的实现
 ### ├── p5_LinearReg.py  # 线性回归模型的实现
 ### ├── p6_LogisticReg.py  # 逻辑回归模型的实现
