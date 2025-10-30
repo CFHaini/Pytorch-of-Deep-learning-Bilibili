@@ -53,4 +53,5 @@ for w in np.arange(0.0, 4.1, 0.1):
 plt.plot(w_list, mse_list)  # 绘制权重与均方误差的曲线
 plt.ylabel('Loss')  # 设置y轴标签
 plt.xlabel('w')  # 设置x轴标签
+plt.title('tuyi')
 plt.show()  # 显示图形

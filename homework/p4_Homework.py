@@ -44,3 +44,4 @@ for epoch in range(2000):
 
 print('Predict (before training)', 4, bofore_training.item())
 print('Predict (after training)', 4, forward(4).item())
+

@@ -40,7 +40,7 @@ def gradient(x, y):
 print('Predict (before training)', 4, forward(4))
 
 # 进行100个epoch的训练
-for epoch in range(100):
+for epoch in range(30):
     # 遍历每一对输入输出数据
     for x, y in zip(x_data, y_data):
         # 计算当前输入的梯度
