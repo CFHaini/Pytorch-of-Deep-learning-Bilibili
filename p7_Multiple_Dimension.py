@@ -23,18 +23,6 @@ import matplotlib.pyplot as plt
             print(name, param.data)
 '''
 
-# 准备数据集
-# 从 'diabetes.csv' 文件中加载数据，使用逗号作为分隔符，数据类型为浮点数
-xy = np.loadtxt('dataset/diabetes.csv', delimiter=',', dtype=np.float32)
-
-# 将数据的前8列作为输入特征 x_data
-# 第一个‘：’表示读取所有行，第二个‘：’表示读取从第一列到倒数第二列的所有列
-x_data = torch.from_numpy(xy[:, :-1])  
-print("input data.shape", x_data.shape)  # 打印输入数据的形状
-
-# 将数据的最后一列作为目标输出 y_data
-# 使用 [-1] 选择最后一列，得到的是一个矩阵
-y_data = torch.from_numpy(xy[:, [-1]])  
 
 # 定义一个神经网络模型类，继承自 torch.nn.Module
 class Model(torch.nn.Module):

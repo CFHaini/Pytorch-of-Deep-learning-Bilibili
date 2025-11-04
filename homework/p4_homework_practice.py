@@ -40,7 +40,7 @@ for epoch in range(2000):
     yl.append(l.item())
 
 print('Predict (before training)',4, before_training.item())
-print('Predict (after training)',4,forward(4).item())
+print('Predict (after training)',4,forward(4).data)
 
 fig=plt.figure()
 ax=fig.add_subplot()

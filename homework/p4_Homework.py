@@ -28,6 +28,7 @@ bofore_training = forward(4)
 
 for epoch in range(2000):
     l = loss(1, 2)  # 为了在for循环之前定义l,以便之后的输出，无实际意义
+    print(type(l).__name__)
     for x, y in zip(x_data, y_data):
         l = loss(x, y)  # 计算当前的损失
         l.backward()  # 反向传播，计算梯度

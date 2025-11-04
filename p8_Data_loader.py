@@ -48,7 +48,6 @@ class DiabetesDataset(Dataset):
         # 将输入数据和标签转换为PyTorch张量
         self.x_data = torch.from_numpy(data)
         self.y_data = torch.from_numpy(label)
-
     def __getitem__(self, index):
         # 根据索引返回输入数据和对应的标签
         return self.x_data[index], self.y_data[index]
